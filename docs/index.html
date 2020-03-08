@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="lightdark.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@700&display=swap" rel="stylesheet">
+  
+    <title>Document</title>
+</head>
+
+<!-- ------------------------------------------------------------ -->
+
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+ 
+    <a href="#">Projects</a>
+
+    <a href="#">Resume</a>
+  
+    <a href="#">About Me</a>
+
+    <a href="#">Contact</a>
+  </div>
+  
+  <!-- Use any element to open the sidenav -->
+  <span onclick="openNav()">NAV</span>
+  <button class="button" id="lightingButton" value="dark" onclick="lightMode()">Light Mode </button>
+ 
+  
+  <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.visibility = "visible";
+      document.getElementById("mySidenav").style.width = "200px";
+      document.body.style.marginLeft = "250px"; 
+    }
+    /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      document.body.style.marginLeft = "0";
+    }
+</script>
+
+<script>
+  function lightMode() {
+      let hello = document.body;
+      hello.classList.toggle("lightMode");
+      let goodbye = document.getElementById("lightingButton");
+     goodbye.classList.toggle("lightMode");
+     
+     if (document.getElementById("lightingButton").value == "dark") {
+      document.getElementById("lightingButton").value = "light";
+      document.getElementById("lightingButton").innerHTML = "Dark Mode";
+     }
+
+      else if (document.getElementById("lightingButton").value == "light") {
+      document.getElementById("lightingButton").value = "dark";
+      document.getElementById("lightingButton").innerHTML = "Light Mode";
+     }
+
+  }
+
+
+</script>
+
+<!-- -------------------DARK-MODE----------------------------------------- -->
+<body>  
+
+
+
+
+<!----------PROJECTS-------------------------------------------------------------------->
+
+<h1>Projects</h1>
+
+<div class="box" id="projects">
+    <img class="whiteborder" src="img/Untitdaled.png">
+    <img class="whiteborder" src="img/sans.png">
+</div>
+
+<!-----------------RESUME------------------------------------------------------------->
+<h1>Resume</h1>
+<div class="box" id="resume"></div>
+
+<!-------------------------ABOUT-ME---------------------------------------------------->
+<h1>About Me</h1>
+<div class="box" id="aboutMe"></div>
+
+<!-------------------------------------CONTACT-ME---------------------------------------->
+<h1>Contact Me</h1>
+<div class="box" id="contactMe"></div>
+
+
+
+
+
+
+
+
+</body>
+
+
+
+
+
+</html>
