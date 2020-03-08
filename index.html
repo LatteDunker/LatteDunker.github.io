@@ -41,24 +41,42 @@
     }
 </script>
 
+
 <script>
   function lightMode() {
       let hello = document.body;
       hello.classList.toggle("lightMode");
       let goodbye = document.getElementById("lightingButton");
      goodbye.classList.toggle("lightMode");
-     
+
+     let su = document.getElementsByTagName("img") 
+    var i;
+
      if (document.getElementById("lightingButton").value == "dark") {
       document.getElementById("lightingButton").value = "light";
       document.getElementById("lightingButton").innerHTML = "Dark Mode";
+    for (i = 0; i < su.length; i++) {
+      su[i].className = "blackBorder";
+    }
      }
 
       else if (document.getElementById("lightingButton").value == "light") {
       document.getElementById("lightingButton").value = "dark";
       document.getElementById("lightingButton").innerHTML = "Light Mode";
+        
+    for (i = 0; i < su.length; i++) {
+      su[i].className = "whiteborder";
+
+    }
      }
 
-  }
+    
+
+
+
+
+    }
+  
 
 
 </script>
