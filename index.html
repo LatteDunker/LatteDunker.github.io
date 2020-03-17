@@ -55,6 +55,8 @@
      if (document.getElementById("lightingButton").value == "dark") {
       document.getElementById("lightingButton").value = "light";
       document.getElementById("lightingButton").innerHTML = "Dark Mode";
+      document.getElementById("lightingButton").style.backgroundColor = "black";
+      document.getElementById("lightingButton").style.color = "white";
     for (i = 0; i < su.length; i++) {
       su[i].className = "blackBorder";
     }
@@ -63,6 +65,10 @@
       else if (document.getElementById("lightingButton").value == "light") {
       document.getElementById("lightingButton").value = "dark";
       document.getElementById("lightingButton").innerHTML = "Light Mode";
+      document.getElementById("lightingButton").style.backgroundColor = "white";
+      document.getElementById("lightingButton").style.color = "black";
+
+
         
     for (i = 0; i < su.length; i++) {
       su[i].className = "";
@@ -83,7 +89,7 @@
 
 <!-- -------------------DARK-MODE----------------------------------------- -->
 <body>  
-
+<h1>hello</h1>
 
 
 

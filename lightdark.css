@@ -47,8 +47,9 @@
 
 }
 .blackBorder {
+  transition: 1s;
   box-shadow: 0 6px 12px 0 rgba(0,0,0,0.2);
-
+  
 }
 
 .blackBorder:hover {
@@ -127,8 +128,12 @@ button:focus {
 
   #lightingButton {
    margin-left: 10px;
-    
+   background-color: white;
+   color: black;
+   
+   font-family:'Source Serif Pro', serif; 
   }
+
 
 
   
